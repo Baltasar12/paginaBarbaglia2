@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Registrarse</h1>
+    <form action="" method="POST"><!--Está hecho con post para que no de la informacíon en la parte de la URL, da error xq no lleva a ningúna página (creo)-->
+    <fieldset>
+        <legend>A continuación ingrese los datos</legend>
+        
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" required>
+        </div>
+
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Escriba su apellido" required>
+        </div>
+
+        <div>
+            <label for="mail">Mail:</label>
+            <input type="email" name="mail" id="mail" placeholder="Escriba su mail" required>
+        </div>
+
+        <div>
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text" name="usuario" id="usuario" placeholder="Escriba su usuario" required>           
+        </div>
+
+        <div>
+            <label for="contrasena">Contraseña:</label>    
+            <input type="password" name="contrasena" id="contrasena" placeholder="Escriba su contraseña" required>
+        </div>
+
+<br><br>
+
+        <span>Elija cada cuanto quiere pagar:</span>
+        <div>
+            <select name="plazo" id="plazo" required>
+                <option value="anual">Anual</option>
+                <option value="semestral">Semestral</option>
+                <option value="mensual">Mensual</option>
+            </select>
+        </div>
+
+<br><br>
+
+        <span>Elija su tipo de suscripción:</span>
+        <div>
+            <label for="sus">Master</label>
+            <input type="radio" name="sus" id="Master">
+            <label for="sus">Pro</label>
+            <input type="radio" name="sus" id="Pro">
+            <label for="sus">Rookie</label>
+            <input type="radio" name="sus" id="Rookie">
+        </div>
+<br>
+        <input type="submit" value="Siguiente" name="exito">
+        <input type="reset" value="Borrar los datos">
+    </fieldset>
+    </form>
+
+    <footer>
+        <span>Nombre de la marca | </span>
+        <span> Redes </span>
+        <span> | nombredelam@gmail.com</span>
+    </footer>
+
+</body>
+</html>

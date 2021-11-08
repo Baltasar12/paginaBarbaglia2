@@ -1,0 +1,17 @@
+body{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+.estiloletras{
+    color: rgb(255, 166, 31);
+}
+
+#tabla{
+    background-color:lightslategrey;
+    color: burlywood;
+}
+
+footer span{
+    color: cadetblue;
+    background-color: darkblue;
+}
