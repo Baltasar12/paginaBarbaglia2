@@ -1,7 +1,9 @@
 body{
+	display: grid;
     font-family: 'IBM Plex Sans Arabic', sans-serif ;
 	margin: 0;
 	padding: 0;
+	height: 100vh;
 	background-image:url(./imagenes/p.png) ;
 	background-repeat: repeat;
 	background-size: auto;
@@ -13,177 +15,57 @@ body{
 	padding-left: 1.6rem;
 	font-size: 1.6rem;
 }
-
 .estiloH1{
 	color: #2b264d;
 	text-transform: uppercase;
-	letter-spacing: 0.01rem;
 	font-style:inherit;
 	text-align: left;
+	letter-spacing: 0.01rem;
 	padding-left: 1rem;
 	font-size: 5rem;
+	margin-top: 8%;
+	margin-bottom: 5%;
 }
-
 .estiloH2{
 	color: #2b264d;
-	letter-spacing: 0.01rem;
 	text-align: left;
+	font-weight: bolder;
+	letter-spacing: 0.01rem;
 	padding-left: 1.5rem;
 	margin-top: 5%;
 	font-size: 2.6rem;
 }
-
-.estiloSpan{letter-spacing: normal;
+.estiloSpan{
+	letter-spacing: normal;
 	color: #2b264d;
 	font-weight: bolder;
 	font-size: 2rem;
 }
-
-
-/*Personalización de grilla*/
-header{
-	grid-area: header;
-}
-h1{
-	grid-area: h1;
-}
-h2#guia{
-	grid-area: guia;
-}
-h2#guia2{
-	grid-area: guia2;
-}
-h2#foto{
-	grid-area: foto;
-}
-p{
-	grid-area: p;
-}
-table{
-	grid-area: tabla;
-
-}
-iframe#vid1{
-	grid-area: vid1;
-	justify-self: end;
-}
-iframe#vid2{
-	grid-area: vid2;
-	justify-self: start;
-}
-a#img{
-	grid-area: img;
-	justify-self: center;
-}
-footer{
-	grid-area: footer;
-}
-nav{
-	grid-area: nav;
-}
-.uno{
-	grid-area: uno;
-	justify-self: end;
-	background-image: url(https://www.apple.com/newsroom/images/product/iphone/standard/apple_iphone-12-spring21_purple_04202021_big.jpg.large.jpg); 
-}
-.dos{
-	grid-area: dos;
-	justify-self: center;
-	background-image: url(https://www.pcworld.es/cmsdata/features/3778130/pc_desktop_deals_thumb900_1-1.jpg);
-}
-.tres{
-	grid-area: tres;
-	background-image: url(https://www.undertec.store/wp-content/uploads/2020/08/mejores-notebooks-2021.jpg);
-}
-.cuatro{
-	grid-area: cuatro;
-	
-	
+#mas{
+	font-weight: bolder;
+	color: #2b264d;
+	font-size: 2rem;
+	margin-left: 1.4rem;
+	margin-top: 4%;
+	margin-bottom: 4%;
 }
 
 
-#grilla{
-	display: grid;
-	grid-template-areas: 
-	"header header header "
-	"h1 none none "
-	"p p p "
-	"uno dos tres"
-	"guia .  guia2"
-	"vid1 . vid2"
-	"foto  . ."
-	". cuatro  ."
-	"footer footer footer"
-	;
-	grid-template-columns: 3fr 4fr 3fr;
-    grid-template-rows: auto auto auto 1fr 0.5fr 1fr 0.5fr auto auto;
-
-}
-
-
-
-/*Personalizacion del header*/
-header {
-	width:100%;
-	overflow:hidden;
-	background:#252932;
-	margin-bottom:20px;
-	height: fit-content;
-}
-
-.navBar {
-	width:90%;
-	max-width:1000px; 
-	margin:auto;
-	overflow:hidden;
-}
-
-header .logo {
-	color:#f2f2f2;
-	font-size:36px;
-	line-height:80px;
-	float:left;
-}
-
-header nav {
-	display:flex;
+/*--CONTENEDORES--*/
+.contenedorTarjetas{
+	margin-top: 30px;
+	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
 	flex-wrap: wrap;
-	line-height:80px;
+	justify-content: space-around;
 }
-
-header nav a {
-	display:inline-block;
-	color:#fff;
-	text-decoration:none;
-	padding:10px 20px;
-	line-height: 80px;
-	font-size:20px;
-	font-weight:bold;
+.contenedorVideos{
+	margin-top: 8%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;	
 }
-
-header nav a:hover {
-	background:#ff667a;
-	border-radius: 90px;
-}
-  
-
-
-/*Personalizacion footer*/
-footer{
-    width:100%;
-	overflow:hidden; 
-	background:#252932;
-	color:#fff;
-	font-size:16px;
-	height: 50px;
-	margin-top: 10%;
-	display:flex;
-	justify-content: space-evenly;
-	align-items: center;
-}
-
 
 
 /*Tarjetas*/
@@ -191,7 +73,6 @@ footer{
 ::after{
   box-sizing: border-box;
 }
-
 .tarjeta{
   color: hsl(0, 0%, 100%);
   background-size: cover;
@@ -201,7 +82,6 @@ footer{
   overflow: hidden;
   transition:   500ms ease;
 }
-
 .contenido{
   --padding: 1.5rem;
   padding: var(--padding);
@@ -211,22 +91,18 @@ footer{
     hsl(0 0% 0% / 1)
     );
 }
-
 .titulo{
   position: relative;
   width: max-content;
   /*outline: 1px solid red;*/
 }
-
 .cuerpo{
   color: rgb(255 255 255/0.8);
 }
-
 .tarjeta:hover,
 .tarjeta:focus-within{
   transform: scale(1.05);
 }
-
 .titulo::after{
   content: "";
   position: absolute;
@@ -238,12 +114,10 @@ footer{
   transform-origin: left;
   transition: 500ms ease;
 }
-
 .tarjeta:hover .titulo::after,
 .tarjeta:focus-within .titulo::after{
   transform: scaleX(1);
 }
-
 .button{
 	cursor: pointer;
 	display:inline-block;
@@ -253,12 +127,86 @@ footer{
 	padding: 0.5em 1.25em;
 	border-radius: 0.25em;
 }
-  
-  .button:hover,
-  .button:focus{
+.button:hover,
+.button:focus{
 	background-color: hsl(0, 0%, 100%);
 }
 
+.uno{
+	background-image: url(https://www.apple.com/newsroom/images/product/iphone/standard/apple_iphone-12-spring21_purple_04202021_big.jpg.large.jpg); 
+}
+.dos{
+	background-image: url(https://www.pcworld.es/cmsdata/features/3778130/pc_desktop_deals_thumb900_1-1.jpg);
+}
+.tres{
+	background-image: url(https://www.undertec.store/wp-content/uploads/2020/08/mejores-notebooks-2021.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Personalizacion del header*/
+header {
+	background:#252932;
+	height: fit-content;
+	overflow:hidden;
+	margin-bottom:20px;
+}
+header .logo {
+	color:#f2f2f2;
+	font-size:36px;
+	line-height:80px;
+	float:left;
+}
+header nav {
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	line-height:80px;
+}
+header nav a {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:80px;
+	font-size:20px;
+	font-weight:bold;
+}
+.navBar {
+	width:90%;
+	max-width:1000px; 
+	margin:auto;
+	overflow:hidden;
+}
+header nav a:hover {
+	background:#ff667a;
+	border-radius: 50px;
+}
+  
+/*Personalizacion footer*/
+footer{
+    width:100%;
+	overflow:hidden; 
+	background:#252932;
+	color:#fff;
+	font-size:16px;
+	height: 50px;
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
 
 
 /*Media Query*/
