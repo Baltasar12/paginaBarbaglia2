@@ -31,8 +31,6 @@ body{
 	text-align: left;
 	font-weight: bolder;
 	letter-spacing: 0.01rem;
-	padding-left: 1.5rem;
-	margin-top: 5%;
 	font-size: 2.6rem;
 }
 .estiloSpan{
@@ -49,7 +47,12 @@ body{
 	margin-top: 4%;
 	margin-bottom: 4%;
 }
-
+#guia{
+	margin-bottom: 6%;
+}
+#guia2{
+	margin-bottom: 6%;
+}
 
 /*--CONTENEDORES--*/
 .contenedorTarjetas{
@@ -61,6 +64,7 @@ body{
 }
 .contenedorVideos{
 	margin-top: 8%;
+	margin-bottom: 8%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
