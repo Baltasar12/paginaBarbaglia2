@@ -49,10 +49,24 @@ body{
 }
 #guia{
 	margin-bottom: 6%;
+	margin-left: 20px;
 }
 #guia2{
 	margin-bottom: 6%;
+	margin-left: 20px;
 }
+#prod{
+	margin-left: 1.4rem;
+}
+
+/*Personalización de elemetos*/
+.artUno{
+	margin-bottom: 8%;
+}
+.artDos{
+	margin-bottom: 8%;
+}
+
 
 /*--CONTENEDORES--*/
 .contenedorTarjetas{
@@ -137,12 +151,15 @@ body{
 }
 
 .uno{
+	margin-top: 12px;
 	background-image: url(https://www.apple.com/newsroom/images/product/iphone/standard/apple_iphone-12-spring21_purple_04202021_big.jpg.large.jpg); 
 }
 .dos{
+	margin-top: 12px;
 	background-image: url(https://www.pcworld.es/cmsdata/features/3778130/pc_desktop_deals_thumb900_1-1.jpg);
 }
 .tres{
+	margin-top: 12px;
 	background-image: url(https://www.undertec.store/wp-content/uploads/2020/08/mejores-notebooks-2021.jpg);
 }
 
