@@ -59,7 +59,9 @@ grid-template-rows: auto 1fr auto;
 #prod{
 	margin-left: 1.4rem;
 }  
-
+#titulo{
+	text-align: center !important;
+}
 
 
 /*Personalización de elemetos*/
@@ -103,41 +105,50 @@ grid-template-rows: auto 1fr auto;
 	justify-content: space-around;
 }
 .contenedorComunidad{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 2%;
 }
 
 
 /*-- Personalización del Flex -- Personalizacion de FAQ*/
 .flexUno{
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
-        flex-direction: row;
 	flex-wrap: wrap;
 	text-align: center;
 	font-size: 1.5rem;
-        margin-bottom: 2%;
+	margin-bottom: 3%;
 }
 .flexDos{
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
-        flex-direction: row;
 	flex-wrap: wrap;
 	text-align: center;
 	font-size: 1.5rem;
+	margin-bottom: 3%;
 }
-.izq{
-	padding:0;
-	margin:0;
+.contenedorFaq{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 25px;
 	width: 25%;
-	height: 30%;
-	border-radius: 20px;
-	background:#8c8377;
-	overflow: hidden;
+	height: 60%;
+	border-radius: 25px;
+	background-color: #ff667a;
 }
-
+.respuestas{
+	border:#2b264d 5px solid;
+	border-radius: 20px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	margin-left: 45px;
+	margin-right: 45px;
+	width: 80%;
+}
 
 
 /*-- Consultas de la comunidad -- Personalizacion de Comunidad*/
@@ -149,7 +160,6 @@ grid-template-rows: auto 1fr auto;
 	width: 45%;
 	height: 50%;
 	border-radius: 25px;
-	border: #ff667a 2px solid;
 	background-color: #ff667a;
 }
 .contenedor__usuario{
@@ -166,6 +176,7 @@ grid-template-rows: auto 1fr auto;
 .contenedor__texto{
 	border:#2b264d 5px solid;
 	border-radius: 20px;
+	margin-top: 20px;
 	margin-bottom: 70px;
 	margin-left: 82px;
 	width: 80%;
@@ -390,7 +401,7 @@ footer {
 	align-items: center;
 	background:#252932;
 	color:#fff;
-        padding: 1rem;
+    padding: 1rem;
 	font-size:16px;
 	height: 50px;
 }
@@ -464,7 +475,7 @@ footer {
 }
 @media (max-width: 1000px){
 	.contenedor__texto{
-		border:#2b264d 5px dashed;
+		border:#2b264d 5px solid;
 		border-radius: 20px;
 		margin-top: 10px;
 		margin-bottom: 50px;
