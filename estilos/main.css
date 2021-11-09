@@ -257,3 +257,21 @@ footer {
 	  !important;
 	}
 }
+@media (max-width: 513px) {
+	footer {	
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			background:#252932;
+			color:#fff;
+			font-size:16px;
+			height: 50px;
+	}
+	.nm{
+			display: none !important;
+	}
+	.ng{
+			display: none !important;
+	}
+
+}
