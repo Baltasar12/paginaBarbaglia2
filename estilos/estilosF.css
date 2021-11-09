@@ -345,12 +345,15 @@ a {
 	background-image: url(https://www.undertec.store/wp-content/uploads/2020/08/mejores-notebooks-2021.jpg);
 }
 .cuatro{
+	margin-top: 12px;
 	background-image: url(https://www.sublimesolutions.com/imgs/articulos/articulos34_10584.jpg);
 }
 .cinco{
+	margin-top: 12px;
 	background-image: url(https://falabella.scene7.com/is/image/FalabellaCO/4079699_1?wid=800&hei=800&qlt=70);
 }
 .seis{
+	margin-top: 12px;
 	background-image: url(https://images.fravega.com/f1000/d14b8913da29491d66c856048692a9c7.jpg);
 }
 
@@ -442,24 +445,39 @@ footer {
 	}
 }
 @media (max-width: 513px) {
-        footer {	
-                display:flex;
-                justify-content: center;
-                align-items: center;
-                background:#252932;
-                color:#fff;
-                font-size:16px;
-                height: 50px;
-        }
-        .nm{
-                display: none !important;
-        }
-        .ng{
-                display: none !important;
-        }
+    footer {	
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background:#252932;
+            color:#fff;
+            font-size:16px;
+            height: 50px;
+    }
+    .nm{
+            display: none !important;
+    }
+    .ng{
+            display: none !important;
+    }
 
 }
+@media (max-width: 1000px){
+	.contenedor__texto{
+		border:#2b264d 5px dashed;
+		border-radius: 20px;
+		margin-top: 10px;
+		margin-bottom: 50px;
+		margin-left: 24px;
+		margin-right: 24px;
+		width: 80%;
+	}
+	.contenedor__pregunta{
+		width: 90%;
+		margin-right: 17px;
+	}
 
+}
 
 /*--Animaciónes--*/
 .shadow-drop-2-center {
