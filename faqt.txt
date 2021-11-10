@@ -1,0 +1,42 @@
+  <h1 class="estiloH1" id="titulo">FAQs</h1>
+
+<div class="flexUno">
+
+    <div class="contenedorFaq shadow-pop-tl">
+        <div class="contenedor__usuario"><h2 id="nombreU">Pregunta 1</h2></div>
+        <div class="respuestas"><p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo perspiciatis sunt et sapiente quisquam esse!</p></div>
+      </div>
+
+
+    <div class="contenedorFaq shadow-pop-tl">
+        <div class="contenedor__usuario"><h2 id="nombreU">Pregunta 2</h2></div>
+        <div class="respuestas"><p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo perspiciatis sunt et sapiente quisquam esse!</p></div>
+    </div>
+
+
+    <div class="contenedorFaq shadow-pop-tl">
+        <div class="contenedor__usuario"><h2 id="nombreU">Pregunta 3</h2></div>
+        <div class="respuestas"><p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo perspiciatis sunt et sapiente quisquam esse!</p></div>
+    </div>
+
+</div>
+
+
+<div class="flexDos">
+
+    <div class="contenedorFaq shadow-pop-tl">
+        <div class="contenedor__usuario"><h2 id="nombreU">Pregunta 4</h2></div>
+        <div class="respuestas"><p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo perspiciatis sunt et sapiente quisquam esse!</p></div>
+    </div>
+
+
+    <div class="contenedorFaq shadow-pop-tl">
+        <div class="contenedor__usuario"><h2 id="nombreU">Pregunta 5</h2></div>
+        <div class="respuestas"><p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo perspiciatis sunt et sapiente quisquam esse!</p></div>
+    </div>
+
+    <div class="contenedorFaq shadow-pop-tl">
+        <div class="contenedor__usuario"><h2 id="nombreU">Pregunta 6</h2></div>
+        <div class="respuestas"><p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo perspiciatis sunt et sapiente quisquam esse!</p></div>
+    </div>
+</div>

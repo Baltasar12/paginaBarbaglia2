@@ -10,6 +10,9 @@ background-size: auto;
 grid-template-rows: auto 1fr auto;
 }
 
+
+
+
 /*Estilos de letras y personalizacion*/
 .estiloP{
     color:  #000;
@@ -40,55 +43,14 @@ grid-template-rows: auto 1fr auto;
 	font-weight: bolder;
 	font-size: 2rem;
 }
-#mas{
-	font-weight: bolder;
-	color: #2b264d;
-	font-size: 2rem;
-	margin-left: 1.4rem;
-	margin-top: 4%;
-	margin-bottom: 4%;
-}
-#guia{
-	margin-bottom: 6%;
-	margin-left: 20px;
-}
-#guia2{
-	margin-bottom: 6%;
-	margin-left: 20px;
-}
-#prod{
-	margin-left: 1.4rem;
-}  
 #titulo{
 	text-align: center !important;
 }
 
 
-/*Personalización de elemetos*/
-.artUno{
-	margin-bottom: 8%;
-}
-.artDos{
-	margin-bottom: 8%;
-}
 
 
-
-.boton{
-	border: 1px #ff667a;
-	background-color: #ff667a;
-}
-.boton:hover,
-.boton:focus{
-	background-color: #000;
-	color: white;
-}
-.medidas{
-	height: 100%;
-	width: 100%;
-}
-
-/*--CONTENEDORES--*/
+/*--PERSONALIZACION DE CATEGORIA*/
 .contenedorCategoria1{
 	margin-bottom: 8%;
 	display: flex;
@@ -103,54 +65,17 @@ grid-template-rows: auto 1fr auto;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
+
+
+
+
+/*--PERSONALIZACION DE COMUNIDAD--*/
 .contenedorComunidad{
-    display: flex;
+	display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-bottom: 2%;
 }
-
-
-/*-- Personalización del Flex -- Personalizacion de FAQ*/
-.flexUno{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	text-align: center;
-	font-size: 1.5rem;
-	margin-bottom: 3%;
-}
-.flexDos{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	text-align: center;
-	font-size: 1.5rem;
-	margin-bottom: 3%;
-}
-.contenedorFaq{
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 25px;
-	width: 25%;
-	height: 60%;
-	border-radius: 25px;
-	background-color: #ff667a;
-}
-.respuestas{
-	border:#2b264d 5px solid;
-	border-radius: 20px;
-	margin-top: 20px;
-	margin-bottom: 40px;
-	margin-left: 45px;
-	margin-right: 45px;
-	width: 80%;
-}
-
-
-/*-- Consultas de la comunidad -- Personalizacion de Comunidad*/
 .contenedor{
 	display: flex;
 	flex-wrap: wrap;
@@ -192,6 +117,70 @@ grid-template-rows: auto 1fr auto;
 padding: 10px;
 font-weight: bold;
 }
+.mejorR{
+	margin: 0;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+
+
+/*--PERSONALIZACION DE PRODUCTOS*/
+.boton{
+	border: 1px #ff667a;
+	background-color: #ff667a;
+}
+.boton:hover,
+.boton:focus{
+	background-color: #000;
+	color: white;
+}
+.medidas{
+	height: 100%;
+	width: 100%;
+}
+
+
+
+
+/*-- PERSONALIZACION DE FAQ*/
+.flexUno{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	text-align: center;
+	font-size: 1.5rem;
+	margin-bottom: 3%;
+}
+.flexDos{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	text-align: center;
+	font-size: 1.5rem;
+	margin-bottom: 3%;
+}
+.contenedorFaq{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 25px;
+	width: 25%;
+	height: 60%;
+	border-radius: 25px;
+	background-color: #ff667a;
+}
+.respuestas{
+	border:#2b264d 5px solid;
+	border-radius: 20px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	margin-left: 45px;
+	margin-right: 45px;
+	width: 80%;
+}
+
 
 
 
@@ -276,6 +265,7 @@ a {
 	color: #c54f95;
 	text-decoration: none
 }
+
 
 
 
@@ -405,6 +395,7 @@ footer {
 	height: 50px;
 }
   
+
 
 
 /*Media Query*/
