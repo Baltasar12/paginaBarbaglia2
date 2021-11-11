@@ -461,7 +461,10 @@ footer {
     .ng{
             display: none !important;
     }
-
+	.contenedor{
+		width: 75%;
+		margin-left: 12%;
+	}
 }
 @media (max-width: 575px){
 	.contenedorProductos{
