@@ -1,0 +1,374 @@
+body {
+	font-family: 'IBM Plex Sans Arabic', sans-serif ;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+	background-image:url(../imagenes/p.png) ;
+	background-repeat: repeat;
+	background-size: auto;
+    grid-template-rows: auto 1fr auto;
+}
+
+/*Estilos de letras y personalizacion*/
+.estiloP{
+    color:  #000;
+	padding-left: 1.6rem;
+	font-size: 1.6rem;
+}
+.estiloH1{
+	color: #2b264d;
+	text-transform: uppercase;
+	font-style:inherit;
+	text-align: left;
+	letter-spacing: 0.01rem;
+	font-size: 5rem;
+	padding-left: 2rem;
+	margin-top: 3%;
+	margin-bottom: 5%;
+}
+.estiloH2{
+	color: #2b264d;
+	text-align: left;
+	font-weight: bolder;
+	letter-spacing: 0.01rem;
+	font-size: 2.6rem;
+}
+.estiloSpan{
+	letter-spacing: normal;
+	color: #2b264d;
+	font-weight: bolder;
+	font-size: 2rem;
+}
+#mas{
+	font-weight: bolder;
+	color: #2b264d;
+	font-size: 2rem;
+	margin-left: 1.4rem;
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+#guia{
+	margin-bottom: 6%;
+	margin-left: 20px;
+}
+#guia2{
+	margin-bottom: 6%;
+	margin-left: 20px;
+}
+#prod{
+	margin-left: 1.4rem;
+}  
+
+
+/*Personalización de elemetos*/
+.artUno{
+	margin-bottom: 8%;
+}
+.artDos{
+	margin-bottom: 8%;
+}
+
+
+/*--CONTENEDORES--*/
+.contenedorTarjetas{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.contenedorVideos{
+	margin-top: 8%;
+	margin-bottom: 8%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;	
+}
+
+
+/*Tarjetas*/
+::before,
+::after{
+  box-sizing: border-box;
+}
+.tarjeta{
+  color: hsl(0, 0%, 100%);
+  background-size: cover;
+  padding: 10rem 0 0;
+  max-width: 35ch;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition:   500ms ease;
+}
+.contenido{
+  --padding: 1.5rem;
+  padding: var(--padding);
+  background: linear-gradient(
+    hsl(207 19% 9% / 0),
+    hsl(0 0% 0% / 0.3) 20%,
+    hsl(0 0% 0% / 1)
+    );
+}
+.titulo{
+  position: relative;
+  width: max-content;
+  /*outline: 1px solid red;*/
+}
+.cuerpo{
+  color: rgb(255 255 255/0.8);
+}
+.tarjeta:hover,
+.tarjeta:focus-within{
+  transform: scale(1.05);
+}
+.titulo::after{
+  content: "";
+  position: absolute;
+  height: 4px;
+  left: calc(var(--padding)*-1 );
+  bottom: -2px;
+  width: calc(100% + var(--padding));
+  background: #ff667a;
+  transform-origin: left;
+  transition: 500ms ease;
+}
+.tarjeta:hover .titulo::after,
+.tarjeta:focus-within .titulo::after{
+  transform: scaleX(1);
+}
+.button{
+	cursor: pointer;
+	display:inline-block;
+	text-decoration: none;
+	color: hsl(207, 19%, 9%);
+	background-color: #ff667a;
+	padding: 0.5em 1.25em;
+	border-radius: 0.25em;
+}
+.button:hover,
+.button:focus{
+	background-color: hsl(0, 0%, 100%);
+}
+.uno{
+	margin-top: 12px;
+	background-image: url(https://www.apple.com/newsroom/images/product/iphone/standard/apple_iphone-12-spring21_purple_04202021_big.jpg.large.jpg); 
+}
+.dos{
+	margin-top: 12px;
+	background-image: url(https://www.pcworld.es/cmsdata/features/3778130/pc_desktop_deals_thumb900_1-1.jpg);
+}
+.tres{
+	margin-top: 12px;
+	background-image: url(https://www.undertec.store/wp-content/uploads/2020/08/mejores-notebooks-2021.jpg);
+}
+
+
+
+
+
+
+
+
+/*--Personalizacion del header--*/
+header {
+    background:#252932;
+    height: fit-content;
+}
+header nav a {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height: 80px;
+	font-size:20px;
+	font-weight:bold;
+}
+.navbar {
+	width:90%;
+	max-width:1000px; 
+	margin:auto; 
+	overflow:hidden;
+}
+header nav a:hover {
+	background:#ff667a;
+	border-radius:50px;
+}
+
+/*Personalizacion footer*/
+footer {	
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background:#252932;
+	color:#fff;
+    padding: 1rem;
+	font-size:16px;
+	height: 50px;
+}
+  
+
+
+/*Media Query*/
+@media (hover){
+	.contenido{
+	transform: translateY(65%);
+	transition: transform 500ms ease;
+	}
+	.tarjeta:hover .contenido,
+	.tarjeta:focus-within .contenido{
+	  transform: translateY(0);
+	  transition-delay: 500ms;
+	}
+  
+	.tarjeta:focus-within, .contenido{
+	  transition-duration: 500ms;
+	}
+  
+	.contenido > *:not(.titulo){
+	  opacity: 0;
+	  transition: opacity 500ms linear;
+	}
+  
+	.tarjeta:hover .contenido > *:not(.titulo),
+	.tarjeta:focus-within .contenido > *:not(.titulo){
+	  opacity: 1;
+	  transition-delay: 500ms;
+	}
+  
+	.titulo::after{
+	  transform: scaleX(0);
+	}
+}
+@media(animacion_reducida: reduce){
+	*,
+	*::before,
+	*::after{
+	  animation-duration: 0.01ms
+	  !important;
+	  animation-iteration-count: 1
+	  !important;
+	  transition-duration: 0.01ms
+	  !important;
+	  scroll-behavior: auto
+	  !important;
+	  transition-delay: 0ms
+	  !important;
+	}
+}
+@media (max-width: 513px) {
+	footer {	
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			background:#252932;
+			color:#fff;
+			font-size:16px;
+			height: 50px;
+	}
+	.nm{
+			display: none !important;
+	}
+	.ng{
+			display: none !important;
+	}
+
+}
+
+
+/*Animaciones*/
+.slide-right {
+	-webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.scale-up-tl {
+	-webkit-animation: scale-up-tl 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-tl 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.scale-up-bottom {
+	-webkit-animation: scale-up-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+/*--KeyFrames--*/
+@-webkit-keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(90px);
+              transform: translateX(90px);
+    }
+}
+@keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(90px);
+              transform: translateX(90px);
+    }
+}
+
+
+@-webkit-keyframes scale-up-tl {
+	0% {
+	  -webkit-transform: scale(0.5);
+			  transform: scale(0.5);
+	  -webkit-transform-origin: 0% 0%;
+			  transform-origin: 0% 0%;
+	}
+	100% {
+	  -webkit-transform: scale(1);
+			  transform: scale(1);
+	  -webkit-transform-origin: 0% 0%;
+			  transform-origin: 0% 0%;
+	}
+}
+  @keyframes scale-up-tl {
+	0% {
+	  -webkit-transform: scale(0.5);
+			  transform: scale(0.5);
+	  -webkit-transform-origin: 0% 0%;
+			  transform-origin: 0% 0%;
+	}
+	100% {
+	  -webkit-transform: scale(1);
+			  transform: scale(1);
+	  -webkit-transform-origin: 0% 0%;
+			  transform-origin: 0% 0%;
+	}
+}
+
+@-webkit-keyframes scale-up-bottom {
+	0% {
+	  -webkit-transform: scale(0.5);
+			  transform: scale(0.5);
+	  -webkit-transform-origin: 50% 100%;
+			  transform-origin: 50% 100%;
+	}
+	100% {
+	  -webkit-transform: scale(1);
+			  transform: scale(1);
+	  -webkit-transform-origin: 50% 100%;
+			  transform-origin: 50% 100%;
+	}
+}
+  @keyframes scale-up-bottom {
+	0% {
+	  -webkit-transform: scale(0.5);
+			  transform: scale(0.5);
+	  -webkit-transform-origin: 50% 100%;
+			  transform-origin: 50% 100%;
+	}
+	100% {
+	  -webkit-transform: scale(1);
+			  transform: scale(1);
+	  -webkit-transform-origin: 50% 100%;
+			  transform-origin: 50% 100%;
+	}
+}
