@@ -120,11 +120,12 @@ footer {
   max-width: 35ch;
   border-radius: 0.5rem;
   overflow: hidden;
-  transition: 500ms ease; }
+  transition: 500ms ease;
+  box-shadow: 5px 5px 10px black; }
   .tarjeta .contenido {
     --padding: 1.5rem;
     padding: var(--padding);
-    background: linear-gradient(  hsl(207 19% 9% / 0),
+    background: linear-gradient(hsl(207 19% 9% / 0),
     hsl(0 0% 0% / 0.3) 20%,
     hsl(0 0% 0% / 1)); }
   .tarjeta .titulo {
@@ -132,7 +133,7 @@ footer {
     width: max-content;
     /*outline: 1px solid red;*/ }
   .tarjeta .cuerpo {
-     }
+    color: #ffff; }
   .tarjeta .titulo::after {
     content: "";
     position: absolute;
@@ -301,4 +302,6 @@ footer {
   .nm {
     display: none !important; }
   .ng {
-    display: none !important; } }
+    display: none !important; }
+  #prod {
+    margin-left: 17% !important; } }

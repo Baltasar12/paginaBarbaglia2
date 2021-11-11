@@ -85,6 +85,7 @@ grid-template-rows: auto 1fr auto;
 	height: 50%;
 	border-radius: 25px;
 	background-color: #ff667a;
+	box-shadow: 5px 5px 10px black;
 }
 .contenedor__usuario{
 	align-self: flex-start;
@@ -282,6 +283,8 @@ a {
   border-radius: 0.5rem;
   overflow: hidden;
   transition:   500ms ease;
+  box-shadow: 5px 5px 10px black;
+  
 }
 .contenido{
   --padding: 1.5rem;

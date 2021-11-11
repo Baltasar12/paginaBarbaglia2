@@ -11,7 +11,8 @@
   border-radius: 0.5rem;
   overflow: hidden;
   transition:   500ms ease;
-
+  box-shadow: 5px 5px 10px black;
+  
   .contenido{
     --padding: 1.5rem;
     padding: var(--padding);
