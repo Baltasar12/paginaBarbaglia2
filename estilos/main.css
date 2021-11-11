@@ -123,11 +123,16 @@ footer {
   transition: 500ms ease; }
   .tarjeta .contenido {
     --padding: 1.5rem;
-    padding: var(--padding); }
+    padding: var(--padding);
+    background: linear-gradient(  hsl(207 19% 9% / 0),
+    hsl(0 0% 0% / 0.3) 20%,
+    hsl(0 0% 0% / 1)); }
   .tarjeta .titulo {
     position: relative;
     width: max-content;
     /*outline: 1px solid red;*/ }
+  .tarjeta .cuerpo {
+     }
   .tarjeta .titulo::after {
     content: "";
     position: absolute;
@@ -273,11 +278,16 @@ footer {
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-    transition-delay: 0ms !important; } }
+    animation-duration: 0.01ms
+ !important;
+    animation-iteration-count: 1
+ !important;
+    transition-duration: 0.01ms
+ !important;
+    scroll-behavior: auto
+ !important;
+    transition-delay: 0ms
+ !important; } }
 
 @media (max-width: 513px) {
   footer {

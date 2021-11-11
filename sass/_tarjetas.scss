@@ -15,7 +15,9 @@
   .contenido{
     --padding: 1.5rem;
     padding: var(--padding);
-  
+    background: linear-gradient(
+
+    );
   }
   .titulo{
     position: relative;
@@ -23,7 +25,7 @@
     /*outline: 1px solid red;*/
   }
   .cuerpo{
-   
+   color: #ffff;
   }
   
   .titulo::after{
