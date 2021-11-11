@@ -1,0 +1,25 @@
+{
+  "name": "cubo-mantenimietos",
+  "version": "1.0.0",
+  "description": "Dependencias para el uso y desarrollo de mi pagina web con uso especifico del sistema de grid y personalizaciones para cada seccion del proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/main.scss estilos/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baltasar12/pagina2test.git"
+  },
+  "author": "BaltasarBarbaglia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Baltasar12/pagina2test/issues"
+  },
+  "homepage": "https://github.com/Baltasar12/pagina2test#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
