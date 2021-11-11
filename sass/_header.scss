@@ -1,0 +1,24 @@
+/*--Personalizacion del header--*/
+header {
+    background:#252932;
+    height: fit-content;
+}
+header nav a {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height: 80px;
+	font-size:20px;
+	font-weight:bold;
+}
+.navbar {
+	width:90%;
+	max-width:1000px; 
+	margin:auto; 
+	overflow:hidden;
+}
+header nav a:hover {
+	background:#ff667a;
+	border-radius:50px;
+}

@@ -1,0 +1,87 @@
+body {
+	font-family: 'IBM Plex Sans Arabic', sans-serif ;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+	background-image:url(../imagenes/p.png) ;
+	background-repeat: repeat;
+	background-size: auto;
+    grid-template-rows: auto 1fr auto;
+
+    .estiloP{
+        color:  #000;
+        padding-left: 1.6rem;
+        font-size: 1.6rem;
+    }
+    .estiloH1{
+        color: #2b264d;
+        text-transform: uppercase;
+        font-style:inherit;
+        text-align: left;
+        letter-spacing: 0.01rem;
+        font-size: 5rem;
+        padding-left: 2rem;
+        margin-top: 3%;
+        margin-bottom: 5%;
+    }
+    .estiloH2{
+        color: #2b264d;
+        text-align: left;
+        font-weight: bolder;
+        letter-spacing: 0.01rem;
+        font-size: 2.6rem;
+    }
+    .estiloSpan{
+        letter-spacing: normal;
+        color: #2b264d;
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+    #mas{
+        font-weight: bolder;
+        color: #2b264d;
+        font-size: 2rem;
+        margin-left: 1.4rem;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    #guia{
+        margin-bottom: 6%;
+        margin-left: 20px;
+    }
+    #guia2{
+        margin-bottom: 6%;
+        margin-left: 20px;
+    }
+    #prod{
+        margin-left: 1.4rem;
+    }  
+}
+
+
+/*Personalización de elemetos*/
+.artUno{
+	margin-bottom: 8%;
+}
+.artDos{
+	margin-bottom: 8%;
+}
+
+
+/*--CONTENEDORES--*/
+.contenedorTarjetas{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.contenedorVideos{
+	margin-top: 8%;
+	margin-bottom: 8%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;	
+}
